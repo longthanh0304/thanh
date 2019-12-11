@@ -1,0 +1,37 @@
+body{
+    background-color: #f7f7ff;
+}
+header{
+    position: relative;
+    height: 230px; 
+}
+.learn-it{
+    position: absolute;
+	bottom: 20px;
+	left: 10px;
+	font-variant: small-caps;
+}
+.learn-it > h1{
+    font-family: Impact;
+	font-size: 50px;
+	color: #1fb299!important;
+	letter-spacing: 0.3px;
+	text-shadow: 2px 2px 2px black;
+	padding-bottom: 0;
+	margin: 0;
+}
+.learn-it > h5{
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    color:#223035;
+}
+.row > article {
+    min-height: 300px;  
+}
+.row > aside {
+    min-height: 300px;  
+}
+footer {
+    background-color: #263238;
+    height: 50px; 
+}
