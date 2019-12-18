@@ -1,248 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <title>LEARN IT</title>
-    <base href="./">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-</head>
-
-<body>
-    <div class="container">
-        <nav class="navbar-custom navbar-expand-lg navbar-light bg-light row">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>
-                            Learn IT <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gioithieu.html" tabindex="-1" aria-disabled="true"><i
-                                class="far fa-list-alt"></i>
-                            Giới thiệu
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hoidap.html" tabindex="-1" aria-disabled="true"><i
-                                class="fas fa-question-circle"></i>
-                            Hỏi đáp
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gopy.html" tabindex="-1" aria-disabled="true"><i
-                                class="fas fa-comment-dots"></i>
-                            Góp ý
-                        </a>
-                    </li>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
-                        data-target="#exampleModal">
-                        Tài khoản
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <ul class="nav nav-tabs text-uppercase font-weight-bold" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
-                                            role="tab" aria-controls="home" aria-selected="true">Đăng nhập</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
-                                            role="tab" aria-controls="profile" aria-selected="false">Đăng ký</a>
-                                    </li>
-                                </ul>
-                                <div class="modal-body">
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                            aria-labelledby="home-tab">
-                                            <form>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                                        placeholder="Email" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput2"
-                                                        placeholder="Password" required>
-                                                </div>
-                                                <div style="cursor: pointer;" onclick="openForgotPassword()">
-                                                    <i class="fas fa-question-circle"></i> Quên mật khẩu
-                                                </div>
-                                                <div style="text-align: center;">
-                                                    <button type="button" class="btn btn-green btn-login-modal"
-                                                        id="btn-sign-in"
-                                                        style="background-color: #26a69a; color:white;">Đăng
-                                                        nhập
-                                                    </button>
-                                                </div>
-                                                <br>
-                                                <div>
-                                                    <div class="text-center" style="margin-bottom: 1rem;">
-                                                        Hoặc đăng nhập bằng
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <div class="fab google-sign-in">
-                                                        <img src="images/google.png" height="100%" width="40px">
-                                                    </div>
-                                                    <div class="fab facebook-sign-in">
-                                                        <img src="images/facebook.png" height="100%" width="40px">
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel"
-                                            aria-labelledby="profile-tab">
-                                            <form>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                                        placeholder="Họ tên" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput2"
-                                                        placeholder="Email" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput3"
-                                                        placeholder="Điện thoại" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput4"
-                                                        placeholder="Mật khẩu" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput5"
-                                                        placeholder="Nhập lại mật khẩu" required>
-                                                </div>
-                                                <div style="text-align: center;">
-                                                    <button type="button" class="btn btn-green btn-login-modal"
-                                                        id="btn-sign-in"
-                                                        style="background-color: #26a69a; color:white;">Đăng ký
-                                                    </button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
+<div class="col-lg-9">
+    <h4 class="text-dark mb-4 mt-4">Gửi <span class="text-primary">góp ý </span></h4>
+    <div class="text-secondary">
+        <form name="formFeedback"></form>
+        <div class="form-group row mb-1">
+            <div class="col-md-8">
+                <input required="" pattern="^[a-zA-Z][a-zA-Z0-9_\.]{5,50}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$" maxlength="75" type="email" class="form-control ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength" name="email" ng-model="$scope.mail.email" placeholder="Email của bạn..." aria-invalid="true">
+                <span class="text-danger ng-active ng-hide" ng-show="formFeedback.email.$error &amp;&amp; formFeedback.email.$dirty" ng-messages="formFeedback.email.$error" role="alert" aria-live="assertive" aria-hidden="true">
+                    <!-- ngMessage: pattern -->
+                    <!-- ngMessage: required --><span ng-message="required" class="ng-scope">Vui
+                        lòng nhập email.</span>
+                </span>
             </div>
-        </nav>
-        <header class="row">
-            <div class="learn-it">
-                <h1>Learn IT</h1>
-                <h5>Cung cấp kiến thức về Công Nghệ Thông Tin</h5>
-            </div>
-            <img class="ml-auto mr-5 mt-auto" src="images/logo2.png" width="220px">
-        </header>
-        <br>
-        <div class="row">
-            <article class="col-sm-9">
-                <div class="col-lg-9">
-                    <h4 class="text-dark mb-4 mt-4">Gửi <span class="text-primary">góp ý </span></h4>
-                    <div class="text-secondary">
-                        <form name="formFeedback"></form>
-                        <div class="form-group row mb-1">
-                            <div class="col-md-8">
-                                <input required=""
-                                    pattern="^[a-zA-Z][a-zA-Z0-9_\.]{5,50}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$"
-                                    maxlength="75" type="email"
-                                    class="form-control ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required ng-valid-pattern ng-valid-maxlength"
-                                    name="email" ng-model="$scope.mail.email" placeholder="Email của bạn..."
-                                    aria-invalid="true">
-                                <span class="text-danger ng-active ng-hide"
-                                    ng-show="formFeedback.email.$error &amp;&amp; formFeedback.email.$dirty"
-                                    ng-messages="formFeedback.email.$error" role="alert" aria-live="assertive"
-                                    aria-hidden="true">
-                                    <!-- ngMessage: pattern -->
-                                    <!-- ngMessage: required --><span ng-message="required" class="ng-scope">Vui
-                                        lòng nhập email.</span>
-                                </span>
-                            </div>
-                            <label for="email" class="col-md-4 col-form-label"></label>
-                        </div>
-                        <div class="form-group row mb-1">
-                            <div class="col-md-8">
-                                <textarea required="" type="text" minlength="5" maxlength="255"
-                                    class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength"
-                                    name="content" ng-model="$scope.mail.content" placeholder="Nội dung góp ý..."
-                                    aria-invalid="true"></textarea>
-                                <span class="text-danger ng-active ng-hide"
-                                    ng-show="formFeedback.content.$error &amp;&amp; formFeedback.content.$dirty"
-                                    ng-messages="formFeedback.content.$error" role="alert" aria-live="assertive"
-                                    aria-hidden="true">
-                                    <!-- ngMessage: required --><span ng-message="required" class="ng-scope">Vui
-                                        lòng nhập nội dung.</span>
-                                    <!-- ngMessage: minlength -->
-                                </span>
-                            </div>
-                            <label for="content" class="col-md-4 col-form-label"></label>
-                        </div>
-                        <div class="form-group row mb-1">
-                            <div class="col-sm-8">
-                                <button class="btn btn-primary" type="submit">Gửi</button>
-                            </div>
-                            <label for="submit" class="col-sm-4 col-form-label"></label>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-            </article>
-            <aside class="col-sm-3">
-                <div class="card mt-1 ml-n2 mr-n2">
-                    <div class="card-header"><i class="fas fa-search"></i> TÌM KIẾM</div>
-                    <div class="card-body">
-                        <form class="form-inline">
-                            <input class="form-control" type="search" placeholder="Search">
-                        </form>
-                    </div>
-                </div>
-                <div class="card mt-1 ml-n2 mr-n2">
-                    <div class="card-header"><i class="fas fa-th-list"></i>MÔN HỌC</div>
-                    <div class="card-body">
-                        <div class="list-group list-group-flush">
-                            <a href="" class="list-group-item list-group-item-action">C++</a>
-                            <a href="" class="list-group-item list-group-item-action">Java</a>
-                            <a href="" class="list-group-item list-group-item-action">PHP</a>
-                            <a href="" class="list-group-item list-group-item-action">JavaScript</a>
-                            <a href="" class="list-group-item list-group-item-action">Database</a>
-                        </div>
-                    </div>
-                </div>
-            </aside>
+            <label for="email" class="col-md-4 col-form-label"></label>
         </div>
-        <br>
-        <footer class="row">
-            <p class="m-auto text-center text-white">
-                Copyright © 2019. Designed by
-                <a href="https://www.facebook.com/yu.nhox" style="color: #1fb299!important;">
-                    Lê Long Thành
-                </a>
-                . All rights reseved
-            </p>
-        </footer>
+        <div class="form-group row mb-1">
+            <div class="col-md-8">
+                <textarea required="" type="text" minlength="5" maxlength="255" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength" name="content" ng-model="$scope.mail.content" placeholder="Nội dung góp ý..." aria-invalid="true"></textarea>
+                <span class="text-danger ng-active ng-hide" ng-show="formFeedback.content.$error &amp;&amp; formFeedback.content.$dirty" ng-messages="formFeedback.content.$error" role="alert" aria-live="assertive" aria-hidden="true">
+                    <!-- ngMessage: required --><span ng-message="required" class="ng-scope">Vui
+                        lòng nhập nội dung.</span>
+                    <!-- ngMessage: minlength -->
+                </span>
+            </div>
+            <label for="content" class="col-md-4 col-form-label"></label>
+        </div>
+        <div class="form-group row mb-1">
+            <div class="col-sm-8">
+                <button class="btn btn-primary" type="submit">Gửi</button>
+            </div>
+            <label for="submit" class="col-sm-4 col-form-label"></label>
+        </div>
+        </form>
     </div>
-</body>
-
-</html>
-
-<script src="js/angular.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+</div>

@@ -2,22 +2,22 @@
     {
         "Id": "ADAV",
         "Name": "Lập trình Android nâng cao",
-        "Logo": "ADAV.jpg"
+        "Logo": "ADAV.png"
     },
     {
         "Id": "ADBS",
         "Name": "Lập trình Android cơ bản",
-        "Logo": "ADBS.jpg"
+        "Logo": "ADBS.png"
     },
     {
         "Id": "ADTE",
         "Name": "Kiểm thử và triển khai ứng dụng Android",
-        "Logo": "ADTE.jpg"
+        "Logo": "ADTE.png"
     },
     {
         "Id": "ADUI",
         "Name": "Thiết kế giao diện trên Android",
-        "Logo": "ADUI.jpg"
+        "Logo": "ADUI.png"
     },
     {
         "Id": "ASNE",
@@ -27,7 +27,7 @@
     {
         "Id": "CLCO",
         "Name": "Điện toán đám mây",
-        "Logo": "CLCO.jpg"
+        "Logo": "CLCO.png"
     },
     {
         "Id": "DBAV",
@@ -47,12 +47,12 @@
     {
         "Id": "HTCS",
         "Name": "HTML5 và CSS3",
-        "Logo": "HTCS.jpg"
+        "Logo": "HTCS.png"
     },
     {
         "Id": "INMA",
         "Name": "Internet Marketing",
-        "Logo": "INMA.jpg"
+        "Logo": "INMA.png"
     },
     {
         "Id": "JAAV",
@@ -72,7 +72,7 @@
     {
         "Id": "LAYO",
         "Name": "Thiết kế layout",
-        "Logo": "LAYO.jpg"
+        "Logo": "LAYO.png"
     },
     {
         "Id": "MOWE",
@@ -87,7 +87,7 @@
     {
         "Id": "PMAG",
         "Name": "Quản lý dự án với Agile",
-        "Logo": "PMAG.jpg"
+        "Logo": "PMAG.png"
     },
     {
         "Id": "VBPR",
@@ -97,6 +97,6 @@
     {
         "Id": "WEBU",
         "Name": "Xây dựng trang web",
-        "Logo": "WEBU.jpg"
+        "Logo": "WEBU.png"
     }
 ]

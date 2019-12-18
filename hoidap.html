@@ -1,238 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <title>LEARN IT</title>
-    <base href="./">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-</head>
-
-<body>
-    <div class="container">
-        <nav class="navbar-custom navbar-expand-lg navbar-light bg-light row">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>
-                            Learn IT <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gioithieu.html" tabindex="-1" aria-disabled="true"><i
-                                class="far fa-list-alt"></i>
-                            Giới thiệu
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hoidap.html" tabindex="-1" aria-disabled="true"><i
-                                class="fas fa-question-circle"></i>
-                            Hỏi đáp
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gopy.html" tabindex="-1" aria-disabled="true"><i
-                                class="fas fa-comment-dots"></i>
-                            Góp ý
-                        </a>
-                    </li>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
-                        data-target="#exampleModal">
-                        Tài khoản
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <ul class="nav nav-tabs text-uppercase font-weight-bold" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
-                                            role="tab" aria-controls="home" aria-selected="true">Đăng nhập</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
-                                            role="tab" aria-controls="profile" aria-selected="false">Đăng ký</a>
-                                    </li>
-                                </ul>
-                                <div class="modal-body">
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                            aria-labelledby="home-tab">
-                                            <form>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                                        placeholder="Email" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput2"
-                                                        placeholder="Password" required>
-                                                </div>
-                                                <div style="cursor: pointer;" onclick="openForgotPassword()">
-                                                    <i class="fas fa-question-circle"></i> Quên mật khẩu
-                                                </div>
-                                                <div style="text-align: center;">
-                                                    <button type="button" class="btn btn-green btn-login-modal"
-                                                        id="btn-sign-in"
-                                                        style="background-color: #26a69a; color:white;">Đăng
-                                                        nhập
-                                                    </button>
-                                                </div>
-                                                <br>
-                                                <div>
-                                                    <div class="text-center" style="margin-bottom: 1rem;">
-                                                        Hoặc đăng nhập bằng
-                                                    </div>
-                                                </div>
-                                                <div class="text-center">
-                                                    <div class="fab google-sign-in">
-                                                        <img src="images/google.png" height="100%" width="40px">
-                                                    </div>
-                                                    <div class="fab facebook-sign-in">
-                                                        <img src="images/facebook.png" height="100%" width="40px">
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel"
-                                            aria-labelledby="profile-tab">
-                                            <form>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                                        placeholder="Họ tên" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput2"
-                                                        placeholder="Email" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput3"
-                                                        placeholder="Điện thoại" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput4"
-                                                        placeholder="Mật khẩu" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput5"
-                                                        placeholder="Nhập lại mật khẩu" required>
-                                                </div>
-                                                <div style="text-align: center;">
-                                                    <button type="button" class="btn btn-green btn-login-modal"
-                                                        id="btn-sign-in"
-                                                        style="background-color: #26a69a; color:white;">Đăng ký
-                                                    </button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </nav>
-        <header class="row">
-            <div class="learn-it">
-                <h1>Learn IT</h1>
-                <h5>Cung cấp kiến thức về Công Nghệ Thông Tin</h5>
-            </div>
-            <img class="ml-auto mr-5 mt-auto" src="images/logo2.png" width="220px">
-        </header>
-        <br>
-        <div class="row">
-            <article class="col-sm-9">
-                <div class="card-header text-uppercase text-center font-play">
-                    <p class="h4 text-dark">
-                        <img src="images/note.png">Các câu hỏi thường gặp
-                    </p>
-                </div>
-                <div class="card-body">
-                    <div class="mt-4 mb-4">
-                        <div class="font-weight-bold">Learn IT là gì? Tôi có thể làm gì ở trang này?</div>
-                        <div>Learn IT gồm hai từ là learn, tiếng Việt là học, IT là từ ám chỉ
-                            những người có tố chất và đam mê vào máy tính, chương trình. Tại đây, chúng tôi cung cấp các
-                            khóa học về ngành công nghệ thông tin, đi đôi với bài tập thực hành gồm trắc nghiệm và trực
-                            tiếp viết mã trên nền trình duyệt. Các bạn có thể tìm kiếm các khóa học cần có để bổ sung
-                            kiến thức, hoặc cũng có thể học vì niềm vui và sự tò mò.</div>
-                    </div>
-                    <div class="mt-4 mb-4">
-                        <div class="font-weight-bold">Nếu gặp sự cố hay trục trặc, tôi có thể liên hệ ai, ở
-                            đâu?</div>
-                        <div>Bạn có thể vào trang chủ bằng cách nhấn vào nhãn hiệu ở góc trên bên
-                            trái, sau đó cuộn trang xuống phần dưới cùng trang web, tại đây bạn có thể gửi góp ý và thấy
-                            các thông tin liên hệ.</div>
-                    </div>
-                    <div class="mt-4 mb-4">
-                        <div class="font-weight-bold">Các khóa học này có miễn phí không?</div>
-                        <div>Hiện tại tất cả khóa học là hoàn toàn miễn phí. Nhưng để đảm bảo tính
-                            phát triển cũng như động lực cho người học, chúng tôi sẽ cập nhật các khóa học chuyên sâu và
-                            chỉ thu phí các khóa chuyên sâu này trong tương lai.</div>
-                    </div>
-                    <div class="mt-4 mb-4">
-                        <div class="font-weight-bold">Các kiến thức và bài giảng có phù hợp với người ngoại
-                            đạo không?</div>
-                        <div>Các tài liệu của chúng tôi đã được nghiên cứu và chuẩn bị cho những học
-                            viên hoàn toàn xa lạ với máy tính cũng có thể tiếp cận một cách hiệu quả, rút ngắn thời gian
-                            nhất có thể.</div>
-                    </div>
-                    <div class="mt-4 mb-4">
-                        <div class="font-weight-bold">Khi hoàn thành một khóa, tôi có nhận được bằng cấp nào
-                            không?</div>
-                        <div>Vào thời điểm hiện tại, chúng tôi vẫn chưa có chương trình cấp bằng cho
-                            học viên.</div>
-                    </div>
-                </div>
-            </article>
-            <aside class="col-sm-3">
-                <div class="card mt-1 ml-n2 mr-n2">
-                    <div class="card-header"><i class="fas fa-search"></i> TÌM KIẾM</div>
-                    <div class="card-body">
-                        <form class="form-inline">
-                            <input class="form-control" type="search" placeholder="Search">
-                        </form>
-                    </div>
-                </div>
-                <div class="card mt-1 ml-n2 mr-n2">
-                    <div class="card-header"><i class="fas fa-th-list"></i>MÔN HỌC</div>
-                    <div class="card-body">
-                        <div class="list-group list-group-flush">
-                            <a href="" class="list-group-item list-group-item-action">C++</a>
-                            <a href="" class="list-group-item list-group-item-action">Java</a>
-                            <a href="" class="list-group-item list-group-item-action">PHP</a>
-                            <a href="" class="list-group-item list-group-item-action">JavaScript</a>
-                            <a href="" class="list-group-item list-group-item-action">Database</a>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-        </div>
-        <br>
-        <footer class="row">
-            <p class="m-auto text-center text-white">
-                Copyright © 2019. Designed by
-                <a href="https://www.facebook.com/yu.nhox" style="color: #1fb299!important;">
-                    Lê Long Thành
-                </a>
-                . All rights reseved
-            </p>
-        </footer>
+<div class="card-header text-uppercase text-center font-play">
+    <p class="h4 text-dark">
+        <img src="images/note.png">Các câu hỏi thường gặp
+    </p>
+</div>
+<div class="card-body">
+    <div class="mt-4 mb-4">
+        <div class="font-weight-bold">Learn IT là gì? Tôi có thể làm gì ở trang này?</div>
+        <div>Learn IT gồm hai từ là learn, tiếng Việt là học, IT là từ ám chỉ
+            những người có tố chất và đam mê vào máy tính, chương trình. Tại đây, chúng tôi cung cấp các
+            khóa học về ngành công nghệ thông tin, đi đôi với bài tập thực hành gồm trắc nghiệm và trực
+            tiếp viết mã trên nền trình duyệt. Các bạn có thể tìm kiếm các khóa học cần có để bổ sung
+            kiến thức, hoặc cũng có thể học vì niềm vui và sự tò mò.</div>
     </div>
-</body>
-
-</html>
-
-<script src="js/angular.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <div class="mt-4 mb-4">
+        <div class="font-weight-bold">Nếu gặp sự cố hay trục trặc, tôi có thể liên hệ ai, ở
+            đâu?</div>
+        <div>Bạn có thể vào trang chủ bằng cách nhấn vào nhãn hiệu ở góc trên bên
+            trái, sau đó cuộn trang xuống phần dưới cùng trang web, tại đây bạn có thể gửi góp ý và thấy
+            các thông tin liên hệ.</div>
+    </div>
+    <div class="mt-4 mb-4">
+        <div class="font-weight-bold">Các khóa học này có miễn phí không?</div>
+        <div>Hiện tại tất cả khóa học là hoàn toàn miễn phí. Nhưng để đảm bảo tính
+            phát triển cũng như động lực cho người học, chúng tôi sẽ cập nhật các khóa học chuyên sâu và
+            chỉ thu phí các khóa chuyên sâu này trong tương lai.</div>
+    </div>
+    <div class="mt-4 mb-4">
+        <div class="font-weight-bold">Các kiến thức và bài giảng có phù hợp với người ngoại
+            đạo không?</div>
+        <div>Các tài liệu của chúng tôi đã được nghiên cứu và chuẩn bị cho những học
+            viên hoàn toàn xa lạ với máy tính cũng có thể tiếp cận một cách hiệu quả, rút ngắn thời gian
+            nhất có thể.</div>
+    </div>
+    <div class="mt-4 mb-4">
+        <div class="font-weight-bold">Khi hoàn thành một khóa, tôi có nhận được bằng cấp nào
+            không?</div>
+        <div>Vào thời điểm hiện tại, chúng tôi vẫn chưa có chương trình cấp bằng cho
+            học viên.</div>
+    </div>
+</div>

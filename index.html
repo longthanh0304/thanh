@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp" ng-controller="myCtrl">
 
 <head>
     <meta charset="UTF-8">
@@ -21,69 +21,60 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>
+                        <a class="nav-link" ng-href="#!home"><i class="fas fa-home"></i>
                             Learn IT <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gioithieu.html" tabindex="-1" aria-disabled="true"><i
-                                class="far fa-list-alt"></i>
+                        <a class="nav-link" ng-href="#!gioithieu" tabindex="-1" aria-disabled="true">
+                            <i class="far fa-list-alt"></i>
                             Giới thiệu
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="hoidap.html" tabindex="-1" aria-disabled="true"><i
-                                class="fas fa-question-circle"></i>
+                        <a class="nav-link" ng-href="#!hoidap" tabindex="-1" aria-disabled="true">
+                            <i class="fas fa-question-circle"></i>
                             Hỏi đáp
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gopy.html" tabindex="-1" aria-disabled="true"><i
-                                class="fas fa-comment-dots"></i>
+                        <a class="nav-link" ng-href="#!gopy" tabindex="-1" aria-disabled="true">
+                            <i class="fas fa-comment-dots"></i>
                             Góp ý
                         </a>
                     </li>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
-                        data-target="#exampleModal">
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
                         Tài khoản
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <ul class="nav nav-tabs text-uppercase font-weight-bold" id="myTab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
-                                            role="tab" aria-controls="home" aria-selected="true">Đăng nhập</a>
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Đăng nhập</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
-                                            role="tab" aria-controls="profile" aria-selected="false">Đăng ký</a>
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Đăng ký</a>
                                     </li>
                                 </ul>
                                 <div class="modal-body">
                                     <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                            aria-labelledby="home-tab">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                             <form>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                                        placeholder="Email" required>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput2"
-                                                        placeholder="Password" required>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password" required>
                                                 </div>
                                                 <div style="cursor: pointer;" onclick="openForgotPassword()">
                                                     <i class="fas fa-question-circle"></i> Quên mật khẩu
                                                 </div>
                                                 <div style="text-align: center;">
-                                                    <button type="button" class="btn btn-green btn-login-modal"
-                                                        id="btn-sign-in"
-                                                        style="background-color: #26a69a; color:white;">Đăng
+                                                    <button type="button" class="btn btn-green btn-login-modal" id="btn-sign-in" style="background-color: #26a69a; color:white;">Đăng
                                                         nhập
                                                     </button>
                                                 </div>
@@ -103,33 +94,25 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel"
-                                            aria-labelledby="profile-tab">
+                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                             <form>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                                        placeholder="Họ tên" required>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Họ tên" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput2"
-                                                        placeholder="Email" required>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput3"
-                                                        placeholder="Điện thoại" required>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Điện thoại" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput4"
-                                                        placeholder="Mật khẩu" required>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Mật khẩu" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="formGroupExampleInput5"
-                                                        placeholder="Nhập lại mật khẩu" required>
+                                                    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Nhập lại mật khẩu" required>
                                                 </div>
                                                 <div style="text-align: center;">
-                                                    <button type="button" class="btn btn-green btn-login-modal"
-                                                        id="btn-sign-in"
-                                                        style="background-color: #26a69a; color:white;">Đăng ký
+                                                    <button type="button" class="btn btn-green btn-login-modal" id="btn-sign-in" style="background-color: #26a69a; color:white;">Đăng ký
                                                     </button>
                                                 </div>
                                             </form>
@@ -151,125 +134,10 @@
         </header>
         <br>
         <div class="row">
-            <article class="col-sm-9">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/slide-show4.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/slide-show5.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/slide-show6.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/slide-show7.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/slide-show8.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/slide-show9.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/slide-show10.jpg" class="d-block w-100">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+            <article class="col-sm-9" >
+                <div ng-view>
                 </div>
-                <div class="card-columns">
-                    <div class="card mt-2 text-center">
-                        <a href="#">
-                            <img src="images/subjects/ADAV.png" class="card-img-top w-50 mt-2">
-                            <div class="card-body">
-                                <h4 class="card-title m-0">
-                                    Lập trình Android cơ bản
-                                </h4>
-                            </div>
-                            <div class="card-footer font-weight-bold">
-                                3.990.000 VNĐ
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card mt-2 text-center">
-                        <a href="">
-                            <img src="images/subjects/ADBS.png" class="card-img-top w-50 mt-2">
-                            <div class="card-body">
-                                <h4 class="card-title m-0">
-                                    Lập trình Android nâng cao
-                                </h4>
-                            </div>
-                            <div class="card-footer font-weight-bold">
-                                5.750.000 VNĐ
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card mt-2 text-center">
-                        <a href="">
-                            <img src="images/subjects/ADUI.png" class="card-img-top w-50 mt-2">
-                            <div class="card-body">
-                                <h4 class="card-title m-0">
-                                    Thiết kế giao diện trên điện thoại
-                                </h4>
-                            </div>
-                            <div class="card-footer font-weight-bold">
-                                1.990.000 VNĐ
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card mt-2 text-center">
-                        <a href="">
-                            <img src="images/subjects/ASNE.png" class="card-img-top w-50 mt-2">
-                            <div class="card-body">
-                                <h4 class="card-title m-0">
-                                    Lập trình ASP.NET trên đa nền tảng
-                                </h4>
-                            </div>
-                            <div class="card-footer font-weight-bold">
-                                2.500.000 VNĐ
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card mt-2 text-center">
-                        <a href="">
-                            <img src="images/subjects/GAME.png" class="card-img-top w-50 mt-2">
-                            <div class="card-body">
-                                <h4 class="card-title m-0">
-                                    Lập trình Unity trên đa nền tảng
-                                </h4>
-                            </div>
-                            <div class="card-footer font-weight-bold">
-                                3.990.000 VNĐ
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card mt-2 text-center">
-                        <a href="">
-                            <img src="images/subjects/VBPR.png" class="card-img-top w-50 mt-2">
-                            <div class="card-body">
-                                <h4 class="card-title m-0">
-                                    Lập trình VB.NET trên đa nền tảng
-                                </h4>
-                            </div>
-                            <div class="card-footer font-weight-bold">
-                                3.290.000 VNĐ
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                
             </article>
             <aside class="col-sm-3">
                 <div class="card mt-1 ml-n2 mr-n2">
@@ -284,11 +152,7 @@
                     <div class="card-header"><i class="fas fa-th-list"></i>MÔN HỌC</div>
                     <div class="card-body">
                         <div class="list-group list-group-flush">
-                            <a href="" class="list-group-item list-group-item-action">C++</a>
-                            <a href="" class="list-group-item list-group-item-action">Java</a>
-                            <a href="" class="list-group-item list-group-item-action">PHP</a>
-                            <a href="" class="list-group-item list-group-item-action">JavaScript</a>
-                            <a href="" class="list-group-item list-group-item-action">Database</a>
+                            <a ng-repeat="item in subjects" ng-href="#!quiz/{{item.Id}}" class="list-group-item list-group-item-action">{{item.Name}}</a>
                         </div>
                     </div>
                 </div>
@@ -308,7 +172,11 @@
 
 </html>
 
-<script src="js/angular.min.js"></script>
 <script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+
+<script src="index.js"></script>
